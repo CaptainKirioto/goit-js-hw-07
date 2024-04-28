@@ -5,17 +5,12 @@ ul {
   padding-left: 0;
 }
 
-.item {
-  background-color: #5555bd;
-}
-
 .list-container {
   width: 392px;
   height: 264px;
+  background-color: #5555bd;
 }
 
 #categories {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  margin-bottom: 24;
 }
