@@ -10,23 +10,20 @@ item.forEach(item => {
   console.log(`Elements: ${listItemsNumber}`);
 });
 
-// Google Font
+// Google Font //
 
 function loadGoogleFonts() {
-  // Создаем первый <link> для preconnect к fonts.googleapis.com
   const linkGoogle = document.createElement('link');
   linkGoogle.rel = 'preconnect';
   linkGoogle.href = 'https://fonts.googleapis.com';
   document.head.appendChild(linkGoogle);
 
-  // Создаем второй <link> для preconnect к fonts.gstatic.com с атрибутом crossorigin
   const linkGstatic = document.createElement('link');
   linkGstatic.rel = 'preconnect';
   linkGstatic.href = 'https://fonts.gstatic.com';
-  linkGstatic.crossOrigin = 'anonymous'; // установите 'anonymous' для корректной поддержки CORS
+  linkGstatic.crossOrigin = 'anonymous';
   document.head.appendChild(linkGstatic);
 
-  // Создаем третий <link> для подключения шрифта Montserrat
   const linkFont = document.createElement('link');
   linkFont.rel = 'stylesheet';
   linkFont.href =
@@ -34,5 +31,4 @@ function loadGoogleFonts() {
   document.head.appendChild(linkFont);
 }
 
-// Добавляем обработчик событий для вызова функции при загрузке DOM
 document.addEventListener('DOMContentLoaded', loadGoogleFonts);

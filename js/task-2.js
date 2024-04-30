@@ -34,6 +34,8 @@ const imagesList = images.map(image => {
   imageElem.classList.add('gallery-img');
   imageElem.setAttribute('src', image.url);
   imageElem.setAttribute('alt', image.alt);
+  imageElem.setAttribute('height', '300px');
+  imageElem.setAttribute('width', '360px');
   listItem.append(imageElem);
   return listItem;
 });
