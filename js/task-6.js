@@ -43,6 +43,8 @@ function destroyBoxes() {
   boxes.innerHTML = '';
 }
 
+/* --- Google Font --- */
+
 function loadGoogleFonts() {
   const linkGoogle = document.createElement('link');
   linkGoogle.rel = 'preconnect';

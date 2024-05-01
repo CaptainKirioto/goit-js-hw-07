@@ -1,4 +1,9 @@
 const form = document.querySelector('.login-form');
+const labels = document.querySelectorAll('label');
+
+labels.forEach(label => {
+  label.classList.add('form-label');
+});
 
 form.addEventListener('submit', handleSubmit);
 
@@ -18,6 +23,8 @@ function handleSubmit(event) {
     form.reset();
   }
 }
+
+/* --- Google Font --- */
 
 function loadGoogleFonts() {
   const linkGoogle = document.createElement('link');

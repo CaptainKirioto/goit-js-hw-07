@@ -10,7 +10,7 @@ item.forEach(item => {
   console.log(`Elements: ${listItemsNumber}`);
 });
 
-// Google Font //
+/* --- Google Font --- */
 
 function loadGoogleFonts() {
   const linkGoogle = document.createElement('link');

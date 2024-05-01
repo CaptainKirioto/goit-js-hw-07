@@ -5,15 +5,17 @@ function getRandomHexColor() {
 }
 
 const body = document.querySelector('body');
-const button = document.querySelector('button');
+const textColor = document.querySelector('.color');
+const button = document.querySelector('.change-color');
 
 button.addEventListener('click', handleClick);
 
 function handleClick(event) {
   body.style.backgroundColor = getRandomHexColor();
-  const textColor = document.querySelector('.color');
   textColor.innerHTML = `${body.style.backgroundColor}`;
 }
+
+/* --- Google Font --- */
 
 function loadGoogleFonts() {
   const linkGoogle = document.createElement('link');

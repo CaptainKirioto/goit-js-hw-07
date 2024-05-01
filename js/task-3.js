@@ -1,4 +1,14 @@
 const input = document.querySelector('#name-input');
+const head = document.querySelector('h1');
+head.classList.add('output-head');
+const body = document.querySelector('body');
+const script = body.querySelector('script');
+
+const container = document.createElement('div');
+container.classList.add('container');
+container.append(input);
+container.append(head);
+body.insertBefore(container, script);
 
 input.addEventListener('input', inputHandler);
 
@@ -12,6 +22,8 @@ function inputHandler(event) {
     greeting.innerHTML = 'Anonymous';
   }
 }
+
+/* --- Google Font --- */
 
 function loadGoogleFonts() {
   const linkGoogle = document.createElement('link');
